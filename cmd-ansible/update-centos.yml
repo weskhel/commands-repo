@@ -1,0 +1,9 @@
+---
+  - name: test
+    hosts: linux-local
+    tasks:
+      - name: Ensure the system is updated
+        yum:
+          name=*
+          state=latest
+
