@@ -1,4 +1,5 @@
 #Basic
+ansible 192.168.0.1 -m ping
 ansible 192.168.0.1 -i /path/to/hosts -m ping -u user --ask-pass -b -K
 ansible 192.168.0.1 -i /path/to/hosts -m 'raw apt update' -u user --ask-pass -b -K
 

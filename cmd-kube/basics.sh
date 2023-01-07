@@ -16,7 +16,7 @@ kubectl delete pods PODNAME
 kubectl expose pod NAMEOFTHEPOD --port PORTTOEXPOSE
 kubectl get service
 kubectl expose pod NAMEOFTHEPOD --type NodePort
-kubectl expose pod NAMEOFTHEPOD --type LoadBalancer 
+kubectl expose pod NAMEOFTHEPOD --type LoadBalancer --name=app --port=80 
 kubectl logs -f NAMEOFTHEPOD
 kubectl create namespace NAMESPACE
 kubectl create deployment DEPLOYMENTNAME --image nginx --replicas 10 -n NAMESPACE --port PORTNUMBER
