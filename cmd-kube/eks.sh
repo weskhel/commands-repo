@@ -1,0 +1,1 @@
+aws eks --region sa-east-1 update-kubeconfig --name sic-homolog
